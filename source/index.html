@@ -4,15 +4,18 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title>Example</title>
-    <meta name="description" content="example base">
-    <meta name="keywords" content="example base">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="example base">
+	<meta name="keywords" content="example base">
+	<meta name="author" content="Luis Viera">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/non-responsive.css">
 
 
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,700">
@@ -22,55 +25,143 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
-		<section>
-			<article class="container header">
-				<div class="panel-white">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="title">
-								<span class="f-roboto-100 fc-blue-dark">Prueba de</span>
-								<p class="f-roboto-700 fc-green">Theming</p>
+	<section>
+		<article class="container header">
+			<div class="panel-white">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="title">
+							<span class="f-roboto-100 fc-blue-dark">Prueba de</span>
+							<p class="f-roboto-700 fc-green">Theming</p>
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="box">
+							<div class="resumen">
+								<img src="images/Layer-2.png" class="img-responsive picture">
+								<h3 class="fc-white f-roboto-700">We're on the same curve</h3>
+								<p class="fc-heavenly-dark">
+									Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.
+								</p>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="box">
-								<div class="resumen">
-									<img src="images/Layer-2.png" class="img-responsive picture">
-									<h3 class="fc-white f-roboto-700">We're on the same curve</h3>
-									<p class="fc-heavenly-light">
-										Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
 					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="panel-dark">
-					<div class="col-md-6">
-						<img src="images/Apple-27LEDCinemaDisplay.png" class="img-responsive img-computer">
-					</div>
-					<div class="col-md-6">
-						<span class="title f-roboto-400 fc-green m-left-25">Just opposite ends</span>
-						<p class="fc-grey-light f-droid-serif m-left-25 m-top-25">But for some reason, you and I react the exac same way to water.</p>
-						<p class="fc-grey-light f-droid-serif m-left-25">We swallow it too fast, we choke. We get some in our lungs, we</p>
-						<p class="fc-grey-light f-droid-serif m-left-25">drown. However unreal it may seem, we are connected, you and I.</p>
-						<p class="fc-grey-light f-droid-serif m-left-25">We're on the same curve, just on opposite ends.</p>
-					</div>
+			</div>
+			<div class="panel-dark">
+				<div class="col-xs-6">
+					<img src="images/Apple-27LEDCinemaDisplay.png" class="img-responsive img-computer">
 				</div>
-			</article>
-		</section>
+				<div class="col-xs-6">
+					<span class="title f-roboto-400 fc-green m-left-25">Just opposite ends</span>
+					<p class="fc-grey-light f-droid-serif m-left-25 m-top-25">But for some reason, you and I react the exac same way to water.</p>
+					<p class="fc-grey-light f-droid-serif m-left-25">We swallow it too fast, we choke. We get some in our lungs, we</p>
+					<p class="fc-grey-light f-droid-serif m-left-25">drown. However unreal it may seem, we are connected, you and I.</p>
+					<p class="fc-grey-light f-droid-serif m-left-25">We're on the same curve, just on opposite ends.</p>
 
-		<section>
-			<article class="container">
-				<div class="panel-white">
+					<div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="">
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<ul class="list-inline thumbnails">
+									<li>
+										<a href="#">
+											<img src="images/tile.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile-1.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile-3.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile-4.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile-4.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="item">
+								<ul class="list-inline thumbnails">
+									<li>
+										<a href="#">
+											<img src="images/tile-3.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile-4.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile-1.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="images/tile-4.png" class="img-responsive">
+											<div class="selection"></div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 				</div>
-				<div class="panel-red">
-					contenido
-				</div>
-			</article>
-		</section>
+			</div>
+		</article>
+	</section>
+
+	<section>
+		<article class="container">
+			<div class="panel-white">
+			</div>
+			<div class="panel-red">
+				contenido
+			</div>
+		</article>
+	</section>
 </body>
 </html>

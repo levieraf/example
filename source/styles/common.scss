@@ -4,7 +4,8 @@ $white: #f4f4f4;
 $green: #8dc53e;
 $red: #ff4445;
 $blue-dark: #015a96;
-$heavenly-light : #3798c5;
+$heavenly-dark: #3798c5;
+$heavenly-light: #2fc5f7;
 $white: WHITE;
 $pixeles: 0 5 10 15 25 30 45 60 75 100;
 
@@ -67,9 +68,14 @@ $pixeles: 0 5 10 15 25 30 45 60 75 100;
 	color: $blue-dark;
 }
 
+.fc-heavenly-dark{
+	color: $heavenly-dark;
+}
+
 .fc-heavenly-light{
 	color: $heavenly-light;
 }
+
 
 .fc-white{
 	color: $white;
