@@ -1,0 +1,81 @@
+$grey-dark: #3d3e42;
+$grey-light: #f3f3f5;
+$white: #f4f4f4;
+$green: #8dc53e;
+$red: #ff4445;
+$blue-dark: #015a96;
+$heavenly-light : #3798c5;
+$white: WHITE;
+$pixeles: 0 5 10 15 25 30 45 60 75 100;
+
+@each $size in $pixeles {
+    .width-#{$size}{width:#{$size}px;}
+}
+
+@each $size in $pixeles {
+    .top-#{$size}{top:#{$size}px;}
+    .left-#{$size}{left:#{$size}px;}
+    .right-#{$size}{right:#{$size}px;}
+    .bottom-#{$size}{bottom:#{$size}px;}
+}
+
+@each $margin in $pixeles {
+    .m-#{$margin}{margin:#{$margin}px;}
+    .m-top-#{$margin}{margin-top:#{$margin}px;}
+    .m-right-#{$margin}{margin-right:#{$margin}px;}
+    .m-bottom-#{$margin}{margin-bottom:#{$margin}px;}
+    .m-left-#{$margin}{margin-left:#{$margin}px;}
+}
+
+@each $padding in $pixeles {
+    .p-#{$padding}{padding:#{$padding}px;}
+    .p-top-#{$padding}{padding-top:#{$padding}px;}
+    .p-right-#{$padding}{padding-right:#{$padding}px;}
+    .p-bottom-#{$padding}{padding-bottom:#{$padding}px;}
+    .p-left-#{$padding}{padding-right:#{$padding}px;}
+}
+
+.f-roboto-100{
+	font-family: "Roboto" !important;
+	font-style: normal;
+	font-weight: 100;
+}
+
+.f-roboto-400{
+	font-family: "Roboto" !important;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.f-roboto-700{
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+}
+
+.f-droid-serif{
+	font-family: "Droid Serif" !important;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.fc-green{
+	color: $green;
+}
+
+.fc-blue-dark{
+	color: $blue-dark;
+}
+
+.fc-heavenly-light{
+	color: $heavenly-light;
+}
+
+.fc-white{
+	color: $white;
+}
+
+.fc-grey-light{
+	color: $grey-light
+}
+

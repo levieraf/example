@@ -1,9 +1,24 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
+    <meta charset="utf-8">
 	<title>Example</title>
-
+    <meta name="description" content="example base">
+    <meta name="keywords" content="example base">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
+
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:100,700">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -12,10 +27,38 @@
 		<section>
 			<article class="container header">
 				<div class="panel-white">
-					header
+					<div class="row">
+						<div class="col-md-6">
+							<div class="title">
+								<span class="f-roboto-100 fc-blue-dark">Prueba de</span>
+								<p class="f-roboto-700 fc-green">Theming</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="box">
+								<div class="resumen">
+									<img src="images/Layer-2.png" class="img-responsive picture">
+									<h3 class="fc-white f-roboto-700">We're on the same curve</h3>
+									<p class="fc-heavenly-light">
+										Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</div>
 				<div class="panel-dark">
-					contenido
+					<div class="col-md-6">
+						<img src="images/Apple-27LEDCinemaDisplay.png" class="img-responsive img-computer">
+					</div>
+					<div class="col-md-6">
+						<span class="title f-roboto-400 fc-green m-left-25">Just opposite ends</span>
+						<p class="fc-grey-light f-droid-serif m-left-25 m-top-25">But for some reason, you and I react the exac same way to water.</p>
+						<p class="fc-grey-light f-droid-serif m-left-25">We swallow it too fast, we choke. We get some in our lungs, we</p>
+						<p class="fc-grey-light f-droid-serif m-left-25">drown. However unreal it may seem, we are connected, you and I.</p>
+						<p class="fc-grey-light f-droid-serif m-left-25">We're on the same curve, just on opposite ends.</p>
+					</div>
 				</div>
 			</article>
 		</section>
@@ -23,7 +66,6 @@
 		<section>
 			<article class="container">
 				<div class="panel-white">
-					contenido
 				</div>
 				<div class="panel-red">
 					contenido
