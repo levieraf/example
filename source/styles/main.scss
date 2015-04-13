@@ -6,39 +6,114 @@
 
 body {
 	background: #F0EEEE;
-	.panel-white{
 
-		height: 430px;
-		min-height: 430px;
-		background: $white;
-		@extend .base-border-panel;
-		.title {
-			font-size: 7em;
-			padding: 45px;
-		}
-
-		.box{
-			margin-top: 30%;
-			.resumen{
-				position: relative;
-				.picture{
-					position: absolute;
-					z-index: 1;
-					top: -100px;
-					left: 15px;
-					-ms-transform: rotate(-7deg); /* IE 9 */
-					-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
-					transform: rotate(-7deg);
-					-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-7); /* for IE8 */
-				}
-				width: 485px;
+	.header{
+		.panel-white{
+			height: 430px;
+			min-height: 430px;
+			background: $white;
+			@extend .base-border-panel;
+			.title {
+				font-size: 7em;
 				padding: 45px;
+			}
 
-				h3, p{
-					z-index: 2;
+			.box{
+				margin-top: 30%;
+				.resumen{
 					position: relative;
+					.picture{
+						position: absolute;
+						z-index: 1;
+						top: -100px;
+						left: 15px;
+						-ms-transform: rotate(-7deg); /* IE 9 */
+						-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+						transform: rotate(-7deg);
+						-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-7); /* for IE8 */
+					}
+					width: 485px;
+					padding: 45px;
+
+					h3, p{
+						z-index: 2;
+						position: relative;
+					}
 				}
 			}
+		}
+	}
+
+
+	.body{
+		.panel-white{
+			height: 430px;
+			min-height: 430px;
+			background: $white;
+			@extend .base-border-panel;
+			.box-summary{
+				padding: 50px 15px;
+				.title{
+					line-height: 45px;
+					text-align: right;
+				}
+				.body{
+					text-align: right;
+					line-height: 25px;
+				}
+			}
+			.box-table{
+				padding: 50px 15px;
+				text-align: center;
+				.title{
+					text-align: center;
+					border-top: 1px solid $heavenly-dark;
+					border-bottom: 1px solid $heavenly-dark;
+					line-height: 45px;
+				}
+
+				.body{
+					font-size: 2em;
+					height: 240px;
+					img{
+						margin: 0 auto;
+					}
+					.row{
+						.ref{
+							line-height: 40px;
+							font-size: 1.5em;
+						}
+
+						.det{
+						  	color: #c0c0c0;
+						}
+						.icon-user{
+							position: relative;
+							bottom: -15px;
+						}
+
+
+						.icon-graphs{
+							position: relative;
+							top: -15px;
+						}
+						.icon-chats{
+							position: relative;
+							top: 10px;
+						}
+						.icon-email{
+							  position: relative;
+							  top: -15px;
+						}
+
+					}
+
+
+				}
+			}
+
+
+
 		}
 	}
 
