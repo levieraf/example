@@ -53,10 +53,12 @@ body {
 			.box-summary{
 				padding: 50px 15px;
 				.title{
+					font-weight: 500;
 					line-height: 45px;
 					text-align: right;
 				}
 				.body{
+					color: #676767;
 					text-align: right;
 					line-height: 25px;
 				}
@@ -179,6 +181,14 @@ body {
 			width: 400px;
 			margin: 0 auto;
 			padding-top: 5%;
+			.panel-default{
+				border: 5px solid $red-dark;
+				.btn-login{
+					border: 5px solid #f4f4f6;
+					border-radius: 20px;
+				}
+			}
+
 			.panel-heading{
 				text-align: center;
 			}
