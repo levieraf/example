@@ -44,7 +44,6 @@ body {
 		}
 	}
 
-
 	.body{
 		.panel-white{
 			height: 430px;
@@ -92,7 +91,6 @@ body {
 							bottom: -15px;
 						}
 
-
 						.icon-graphs{
 							position: relative;
 							top: -15px;
@@ -107,8 +105,6 @@ body {
 						}
 
 					}
-
-
 				}
 			}
 
@@ -147,22 +143,13 @@ body {
 					li{
 						padding-right: 0px;
 						padding-left: 0px;
-						a{
-							position: relative;
-							&:hover{
-								.selection{
-									border: 4px solid #2fc5f7;
-									position: absolute;
-									width: 100%;
-									height: 100%;
-									top: 0px;
-									border-radius: 5px;
-								}
-							}
+						&:hover{
+							border: 3px solid #2fc5f7;
+							border-radius: 5px;
 						}
 					}
 					li:first-child{
-						padding-left: 5px;
+						margin-left: 5px;
 					}
 				}
 			}
@@ -188,5 +175,20 @@ body {
 		min-height: 409px;
 		background: $red;
 		@extend .base-border-panel;
+		.form-login{
+			width: 400px;
+			margin: 0 auto;
+			padding-top: 5%;
+			.panel-heading{
+				text-align: center;
+			}
+			.forgot-password{
+				text-align: center;
+				color: $white;
+				a{
+					color: $grey-light-two;
+				}
+			}
+		}
 	}
 }
